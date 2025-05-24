@@ -1,0 +1,186 @@
+.wrapper {
+    background: #181818;
+    min-height: 100%;
+    color: #fff;
+    font-family: 'TT TANK', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.heder__container {
+    display: flex;
+    /* Засстояние межну колонками hlex-контейнера */
+    column-gap: 32px;
+}
+
+.logo {
+    display: block;
+    width: 70px;
+}
+
+.header__logo {}
+
+.logo__img {}
+
+/* Это блок с права от логотипа */
+.heder__content {
+    flex: 1;
+    /* расшифровка flex 1;
+    разрешает элементу расширяться если в контейнере есть свободное место ;
+    flex-grow: 1;
+    разрешаем элементу ужиматься если места в контейнере не хватает;
+    flex-shrink: 1;
+    базовые размеры ( в нашем случае начальная ширина );
+    flex-basis: 0;*/
+}
+
+/*верхняя часть шапки*/
+.heder__top {
+    /* распиложить элементы рядом  друг с другом*/
+    display: flex;
+    /* распределить свободное пространство таким образом чтобы крайние элементы прижались к краю контейнера */
+    justify-content: space-between;
+    /* ширина границы, тип границы ( solid-сплошная линия ), цвет границы*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /*нижний внутренний отступ*/
+    padding-bottom: 10px;
+    /* прижать по вертикали элементы к верхнему краю flex - контейнера*/
+    align-items: flex-start;
+}
+
+.location {
+    font-weight: 500;
+    font-size: 14px;
+    color: #939697;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+
+}
+
+.location::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+    /* фоновое изображение псевдоэлементами ( картинка лаокации)*/
+    background-image: url(../imeges/iconc/.location.svg);
+    /* запретить воновому изображению повторяться */
+    background-repeat: no-repeat;
+    /* рассположить фоновое изображение по центру блока*/
+    background-position: center;
+    /* установили фоновому изображению таой размер чтобы оно заполнило собой юлок с сохранением пропорий*/
+    background-size: contain;
+}
+
+.services {
+    display: flex;
+    column-gap: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+}
+
+.services__item {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.services__item::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: contain;
+
+}
+
+.services__services::before {
+    border-image: url(../images/icons/servect.svg);
+}
+
+.services__test-drive::before {
+    border-image: url(../images/icons/servect.svg);
+}
+
+.services__link {}
+
+.services__test {}
+
+.heder__bottom {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.heder__title::after {
+    content: "";
+    display: block;
+    height: 30px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.title-block {
+    display: flex;
+    align-items: center;
+
+}
+
+.title {}
+
+.subtitle {}
+
+.contacts {}
+
+.heder__contacts {}
+
+.phone__wrap {}
+
+.phone {}
+
+.phone-wrap__info {}
+
+.btn {}
+
+.btn-- {}
+
+
+.welcome {
+    min-height: 700px;
+    background-image: url(../imeges/logo.445e7b59\ 1.png);
+    background-size: cover;
+    background-position: right center;
+}
+
+.container {}
+
+.welcome__container {}
+
+.welcome__containt {}
+
+.welkom__title-wrap {}
+
+.welcom__subtitle {}
+
+.welcom__title {}
+
+.welcom__subtotle {}
+
+.btn {}
+
+.btn--size--high {}

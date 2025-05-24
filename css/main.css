@@ -1,0 +1,752 @@
+.wrapper {
+    background: #181818;
+    min-height: 100%;
+    color: #fff;
+    font-family: 'TT TANK', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.heder__content-mobile {
+    display: none;
+}
+
+.heder__container {
+    display: flex;
+    /* Засстояние межну колонками hlex-контейнера */
+    column-gap: 32px;
+}
+
+.logo {
+    display: block;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.header__logo {}
+
+.logo__img {}
+
+/* Это блок с права от логотипа */
+.heder__content {
+    flex: 1;
+    /* расшифровка flex 1;
+    разрешает элементу расширяться если в контейнере есть свободное место ;
+    flex-grow: 1;
+    разрешаем элементу ужиматься если места в контейнере не хватает;
+    flex-shrink: 1;
+    базовые размеры ( в нашем случае начальная ширина );
+    flex-basis: 0;*/
+}
+
+/*верхняя часть шапки*/
+.heder__top {
+    /* распиложить элементы рядом  друг с другом*/
+    display: flex;
+    /* распределить свободное пространство таким образом чтобы крайние элементы прижались к краю контейнера */
+    justify-content: space-between;
+    /* ширина границы, тип границы ( solid-сплошная линия ), цвет границы*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /*нижний внутренний отступ*/
+    padding-bottom: 10px;
+    /* прижать по вертикали элементы к верхнему краю flex - контейнера*/
+    align-items: flex-start;
+}
+
+.location {
+    font-weight: 500;
+    font-size: 14px;
+    color: #939697;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+
+}
+
+.location::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* фоновое изображение псевдоэлементами ( картинка лаокации)*/
+    background-image: url(../imeges/icons/location.svg);
+    /* запретить воновому изображению повторяться */
+    background-repeat: no-repeat;
+    /* рассположить фоновое изображение по центру блока*/
+    background-position: center;
+    /* установили фоновому изображению таой размер чтобы оно заполнило собой юлок с сохранением пропорий*/
+    background-size: contain;
+}
+
+.services {
+    display: flex;
+    column-gap: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.07em;
+}
+
+.services__item {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.services__item::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: contain;
+
+}
+
+.services__services::before {
+    border-image: url(../images/icons/servect.svg);
+}
+
+.services__test-drive::before {
+    border-image: url(../images/icons/servect.svg);
+}
+
+.services__link {}
+
+.services__test {}
+
+.heder__bottom {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.heder__title::after {
+    content: "";
+    display: block;
+    height: 30px;
+    margin: 0px 20px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.title-block {
+    display: flex;
+    align-items: center;
+
+}
+
+.heder__title {
+    display: flex;
+    align-items: center;
+}
+
+.title {}
+
+.subtitle {}
+
+.contacts {
+    display: flex;
+    column-gap: 40px;
+}
+
+.heder__contacts {}
+
+.phone__wrap {}
+
+.phone {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.phone-wrap__info {
+    font-size: 14px;
+    color: #939697;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 4px;
+}
+
+
+.phone-wrap__info::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-color: #00d154;
+    background-repeat: 50%;
+}
+
+.btn {}
+
+.btn--call-me {}
+
+
+.welcome {
+    min-height: 700px;
+    background-image: url(../imeges/bg.png);
+    background-size: cover;
+    background-position: right center;
+    padding-top: 179px;
+    margin-bottom: 20px;
+}
+
+
+.container {}
+
+.welcome__container {}
+
+.welcome__containt {}
+
+.welkom__title-wrap {
+    margin-bottom: 40px;
+
+}
+
+.welcom__subtitle {
+    font-weight: 500px;
+    font-size: 28px;
+}
+
+.welcom__title {
+    font-weight: 700;
+    font-style: 60px;
+    /* Верхний регистр (Все буквы больше)*/
+    text-transform: uppercase;
+    margin: 11px 0px;
+}
+
+.welcom__subtotle {}
+
+.btn {}
+
+.btn--size--high {}
+
+
+.promo {
+    margin-bottom: 60px;
+}
+
+.container {}
+
+.promo__content {
+    background: #252c2c;
+    border-radius: 10px;
+    padding: 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 110%;
+    text-transform: uppercase;
+    max-width: 318px;
+}
+
+.promo__timer {
+    content: "";
+    display: flex;
+    column-gap: 30px;
+}
+
+.promo__timel-list {}
+
+.promo__timer-item {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid #FF9549;
+    border-radius: 50%;
+    position: relative;
+}
+
+.promo__timer-item:not(:last-child)::after {
+    content: ":";
+    font-weight: 700;
+    font-size: 39px;
+    display: inline-block;
+    position: absolute;
+    right: -24px;
+}
+
+.promo__timer-value {
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+
+}
+
+
+.promo__timer-ladel {
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.promo__btn-wrap {}
+
+.btn {}
+
+.btn--size--high {}
+
+/*Преимущества*/
+
+.benefits {}
+
+.benefits_list {
+    display: flex;
+    column-gap: 24px;
+}
+
+
+.benefits_item {
+    min-height: 136px;
+    flex: 1;
+    /* Если у вес элементов установить flex: то они разделят поровну свободное пространство внутри Flex-контейнер  */
+
+}
+
+.benefit {
+    content: "";
+    border: 1px solid #939697;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+
+}
+
+.benefit_iton {
+    width: 44px;
+    height: 44;
+    /* картинкма помешается в указаные размеры с сохранение пропорций */
+    object-fit: contain;
+}
+
+.benefit_text {
+    font-size: 16px;
+}
+
+.benefit_title {
+    font-weight: 700;
+    font-style: 20px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.benefit_desc {
+    line-height: 120%;
+}
+
+/*Бронирование*/
+.booking-promo {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.container {}
+
+.booking-promo_title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.booking-promo_list {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.booking-promo_item {}
+
+.booking-promo_img {}
+
+.booking-promo_desc {
+    font-weight: 500px;
+}
+
+/*************Специальное предложение***************/
+.special-offer {
+    padding: 80px 0px;
+}
+
+.special-offer_container {}
+
+.special-offer_main {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.special-offer_main-contant {
+    max-width: 417px;
+}
+
+.special-offer_bage {
+    font-weight: 500;
+    font-size: 20px;
+    color: #ff9549;
+    margin-bottom: 12px;
+}
+
+.special-offer_title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.special-offer_higlight {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 321px;
+    margin-bottom: 6px;
+}
+
+.special-pffer_disclamer {
+    border-radius: 10px;
+    padding: 6px 10px;
+    background-color: #ff2b00;
+    display: inline-flex;
+    /*расстояние между колонками Flex контейнера */
+    column-gap: 8px;
+    margin-bottom: 40px;
+}
+
+.special-pffer_disclamer::before,
+.special-pffer_disclamer::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/imeges/warning.svg);
+    background-size: contain;
+    background-position: center;
+}
+
+.special-offer_btn {
+    display: flex;
+    /*Сменить направление главной оси*/
+    flex-direction: column;
+    /*расстояние между строками flex-контейнера*/
+    row-gap: 10px;
+}
+
+.special-offer-banner {
+    display: flex;
+}
+
+.btn {}
+
+.btn--size--high {}
+
+.btn--size--medium {}
+
+.btn-transp {}
+
+.special-offer-_img-wrap {
+    max-width: 802px;
+    position: relative;
+}
+
+.special-offer-img {}
+
+.spacial-offer_baner-limit {
+    border-radius: 8px;
+    padding: 6px 14px;
+    width: 140px;
+    max-height: 66px;
+    background-color: #ff9549;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: #181818;
+    position: absolute;
+    top: 24px;
+    right: 52px;
+    /*повернуть блок на 15 градусов*/
+    transform: rotate(15deg);
+
+}
+
+.switch__color-car {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.special-offer__trigger {}
+
+.color-car-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/*Всем ledel внутри блока swiht-color-car задать относительное позиционирование*/
+.services-color-car label {
+    position: relative;
+}
+
+.color-car-check {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+}
+
+/*Если переключатель находиться в состоянии checked то стоящий сразу после него сосед стилизуеться следуйшим образом*/
+.color-car-check:checked+.color-car-circle {
+    background-image: url(../imeges/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-offer_benefits {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    margin-bottom: 30px;
+}
+
+.special-offer_benefit {
+    border-radius: 10px;
+    background-color: #252c2c;
+    /*разделить поровну все свободное пространство*/
+    flex: 1;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+
+.special-offer_benefit-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.special-offer_benefit span {
+    max-width: 173px;
+}
+
+.special-offer_gellery {}
+
+.special-offer_gallary-list {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 24px;
+}
+
+.special-offer_gallary-item {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 240px;
+    height: 200px;
+
+}
+
+.special-offer_gallary-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trade-in {
+    border-radius: 10px;
+
+}
+
+.trade-in__image {}
+
+.trade-in__pic {}
+
+.traid-in__container {
+    padding: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.trade-in__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 50px;
+
+}
+
+.btn {}
+
+.btn--size--medium {}
+
+.btn-trade-in-btn {
+    border-radius: 8px;
+    padding: 14px 30px;
+}
+
+.credit {}
+
+.container__credit-container {}
+
+.credit__image {
+    width: 1920px;
+    height: 400px;
+}
+
+.credit__pic {}
+
+
+.credit__content {
+    column-gap: 30px;
+}
+
+.credit__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+/****************************Секция кредит***************************/
+
+
+.credit {
+    padding: 76px 0px 56px;
+    background-image: url(../pg/image\ 281.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container__subtitle {
+    font-style: 18px;
+}
+
+.credit__content {}
+
+.credit-header {
+    margin-bottom: 40px;
+    max-width: 400px;
+    margin-bottom: 14px;
+}
+
+.credit__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.credit__subtotle {
+    font-size: 18px;
+}
+
+.credit-form {}
+
+.credit-from__content {
+    margin-bottom: 14px;
+}
+
+.credit-form__phone {
+    margin-bottom: 14px;
+}
+
+.credit-form__phone-label {
+    font-size: 14px;
+    color: #939697;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.credit-form__phone-input {
+    background-color: #252c2c;
+    border: 1px solid #939697;
+    border-radius: 8px;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #939697;
+}
+
+.credit-form__phone-input:focus {
+    outline: none;
+}
+
+.credit-form__phone-input:focus::placeholder {
+    color: #fff;
+}
+
+.credit-form__phone-label::placeholder .btn {}
+
+.btn--size--medium {}
+
+.credit-form__agreement {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    position: relative;
+}
+
+.credit-form__agreement-checkbox-fake {
+    border: 1px solid #939697;
+    border-radius: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: #252c2c;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+}
+
+.credit-form__agreement-checkbox:checked+.credit-form__agreement-checkbox-fake {
+    background-color: #ff9549;
+    color: #181818;
+}
+
+.credit-form__agreement-checkbox {
+    position: absolute;
+    top: 0px;
+    left: -9999px;
+}
+
+.credit-from__agreement-text {
+    font-size: 12px;
+}
